@@ -11,6 +11,9 @@ function handleEvent(event) {
   if (event.type === "load") {
     const brandValue = document.querySelector('input[name="contact"]:checked').value;
     selectEl(".drop-container").classList.remove("no-content");
+    selectEl(".mobile-container").classList.remove("no-content");
+    selectEl(".mobile-container-non-wof").classList.remove("no-content");
+
     for (let i = 0; i < preview.length; i++) {
       if (brandValue != "wof") {
         if (firstDrop == false) {
@@ -19,10 +22,6 @@ function handleEvent(event) {
           }
           return;
         }
-        preview[i].style.backgroundImage = `url(${reader.result})`;
-        selectEl(".background").classList.remove("absolute");
-        firstDrop = false;
-        return;
       } else {
         if (firstDrop) {
           wofPreview.style.backgroundImage = `url(${reader.result})`;
@@ -30,9 +29,13 @@ function handleEvent(event) {
           return;
         }
         wofPreviewMobile.style.backgroundImage = `url(${reader.result})`;
-        selectEl(".mobile-container").classList.remove("no-content");
+      }
+      if (brandValue != "wof") {
+        preview[i].style.backgroundImage = `url(${reader.result})`;
+        selectEl(".background").classList.remove("absolute");
       }
     }
+    firstDrop = false;
   }
 }
 
@@ -167,7 +170,7 @@ selectEl('input[type="file"]').addEventListener("click", (e) => {
         updateClass({ value: e.target.value, header: "./borgata.png" });
         break;
       case "wof":
-        updateClass({ value: e.target.value, header: "./borgata.png" });
+        updateClass({ value: e.target.value, header: "./wof.png" });
         break;
       case "partycasino":
         updateClass({ value: e.target.value, header: "./partycasino.png" });

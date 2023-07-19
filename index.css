@@ -47,11 +47,16 @@ label {
 
 .nav-view-container {
     background-color: #F8F9FA;
-    padding: 40px;
-    gap: 20px;
+    padding: 30px;
 }
 
-
+.nav-view-container h5 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.15rem;
+    margin-bottom: 12px;
+}
 
 
 
@@ -149,11 +154,9 @@ label {
 .container-mobile,
 .teaser-mobile {
     margin: 0;
+    height: 100%;
 }
 
-.dummy {
-    /* display: none; */
-}
 
 
 input:checked+label {
@@ -220,6 +223,27 @@ input:checked+label {
     justify-content: center;
     align-items: center;
 }
+
+.nav-view-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.swiper-wrapper, .teaser-mobile  {
+    margin: 0 auto;
+}
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
