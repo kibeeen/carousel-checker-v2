@@ -1,0 +1,32 @@
+.md-teaser-image.teaser-image-mobile.partycasino{
+    position: absolute;
+    height: 100%;
+    left: 0;
+    top: 0;
+    width: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: -85px;
+}
+.teaser-text-mobile.partycasino{
+    background: none !important;
+}
+.btn.btn-primary.epcot-btn.partycasino{
+    background: #f44775 !important;
+    border-radius: 12px;
+    border-width: 1px;
+    height: 2.5rem;
+    line-height: 2.375rem;
+    margin-top: 0;
+    width: auto;
+}
+.btn.btn-primary.epcot-btn.mobile.partycasino{
+    font-size: .75rem;
+    padding-top: 0;
+    padding-bottom: 0;
+    display: block;
+    height: 2rem;
+    line-height: 2rem;
+    min-width: inherit;
+    display: inline-block;
+}

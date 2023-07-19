@@ -1,0 +1,378 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,700;1,500&display=swap');
+@import url('./root.css');
+@import url('./poker.css');
+@import url('./borgata.css');
+@import url('./bingo.css');
+@import url('./wof.css');
+@import url('./partycasino.css');
+
+* {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1rem;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    height: 100vh;
+    overflow: auto;
+}
+
+.carousel-title {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
+
+.image-container {
+    height: 600px;
+    position: relative;
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    display: flex;
+}
+
+.image-container>* {
+    flex-grow: 1;
+}
+
+label {
+    display: block;
+    padding: 10px 0px;
+}
+
+.nav-view-container {
+    background-color: #F8F9FA;
+    padding: 40px;
+    gap: 20px;
+}
+
+
+
+
+
+
+/* .input-text>input:active { 
+    color: #007BFF;
+    border-color: #007BFF;
+  }  */
+
+
+
+.drop-container {
+    position: relative;
+    height: 100%;
+    width: 100%;
+}
+
+.background {
+    /* position: absolute; */
+    height: 100%;
+    width: 100%;
+    left: 0;
+    top: 0;
+    opacity: 0;
+    z-index: 10;
+    user-select: none;
+}
+
+.absolute {
+    position: absolute;
+}
+
+.no-content {
+    position: absolute;
+}
+
+.png-container {
+    position: relative;
+    z-index: 999;
+}
+
+.png {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    left: 0;
+    top: 0;
+    opacity: 0;
+    user-select: none;
+}
+
+.header {
+    background-image: url('./image.png');
+    background-size: cover;
+    background-position: center left;
+    background-repeat: no-repeat;
+    height: 80px;
+    width: 100%;
+}
+
+.bingo-wrapper {
+    height: 330px;
+}
+
+.swiper-slide-prev {
+    width: 1350px;
+}
+
+.full {
+    width: unset;
+}
+
+.file-select {
+    display: flex;
+    justify-content: space-between;
+}
+
+.reset button {
+    padding: 10px;
+}
+
+.swiper-wrapper {
+    background-color: #fff;
+    position: relative;
+}
+
+
+
+
+
+.main-body {
+    margin-left: 350px;
+}
+
+.container-mobile,
+.teaser-mobile {
+    margin: 0;
+}
+
+.dummy {
+    /* display: none; */
+}
+
+
+input:checked+label {
+    border: 3px solid #007BFF;
+    transition: border-color ease .15s;
+    opacity: 1;
+    transition: filter ease-in-out .1s;
+    filter: none !important;
+}
+
+
+.radio-input-group {
+    padding-left: 0;
+    list-style-type: none;
+}
+
+.radio-input-group li,
+.radio-input-group label {
+    display: inline-block;
+    margin-left: 5px;
+    cursor: pointer;
+}
+
+.radio-input-group label {
+    filter: grayscale(100%);
+}
+
+.radio-input-group label:hover {
+    background-color: #fff;
+    opacity: 1;
+    transition: opacity ease-in-out .1s;
+    transition: filter ease-in-out .15s;
+    filter: none !important;
+}
+
+.radio-input-group li:first-child,
+.radio-input-group li:nth-child(5),
+.radio-input-group li:nth-child(10) {
+    margin-left: 0;
+}
+
+.radio-input-group li label {
+    background-size: contain !important;
+    width: 60px;
+    height: 60px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+.radio-input-group input {
+    display: none;
+}
+
+.tab-content {
+    width: 100%;
+    height: 500px;
+    position: relative;
+    padding: 20px 10px;
+    background: #FFF;
+    border: 1px solid #dee2e6;
+    border-top: unset;
+    border-radius: 0 0 6px 6px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+
+
+/* SIDEBAR */
+
+.sidebar {
+    background-color: #252627;
+    color: #E9E9E9;
+    width: 350px;
+    height: 100vh;
+    position: fixed;
+    float: left;
+    z-index: 99;
+    padding: 20px;
+}
+
+.sidebar * {
+    font-family: "Inter";
+}
+
+
+
+.sidebar h6 {
+    color: #FFF;
+    font-size: .9rem;
+    margin-bottom: .75rem;
+}
+
+.btn-cis-primary {
+    width: 100%;
+    background-color: #007BFF;
+}
+
+.btn-cis-primary:hover {
+    background-color: #0067d4;
+    transition: background-color .1s linear, border-color .1s linear, color .1s linear;
+}
+
+.btn-cis-primary:active {
+    background-color: #004792;
+    font-size: .79rem;
+    transition: background-color .1s linear, border-color .1s linear, color .1s linear, font-size .1s;
+}
+
+
+
+.btn-cis {
+    align-items: center;
+    justify-content: center;
+    border: 2px solid transparent;
+    border-radius: 4px;
+    box-sizing: border-box;
+    color: #fff;
+    cursor: pointer;
+    display: inline-flex;
+    height: 40px;
+    max-width: 100%;
+    min-width: 80px;
+    padding: 0 6px;
+    vertical-align: middle;
+    font-size: 13px;
+    font-weight: 600;
+}
+
+.upload-placeholder {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    background-color: #252627;
+}
+
+
+
+.no-content {
+    border: 4px dashed #007bff;
+    background-color: #E6ECFF;
+    background-image: radial-gradient(circle, #b3d5f9 1px, rgba(0, 0, 0, 0) 1px);
+    background-size: 1rem 1rem;
+    background-repeat: repeat;
+
+    border-radius: 15px;
+    box-sizing: border-box;
+    transition: linear 0.1s;
+}
+
+.no-content:hover {
+    
+    background-image: radial-gradient(circle, #a4d0ff 1px, rgba(0, 0, 0, 0) 1px);
+    border-radius: 5px;
+    transition: linear 0.1s;
+}
+
+
+
+
+
+
+/* INPUT */
+
+.allContainer {
+    background-color: #343536;
+    border-radius: 6px;
+    padding: 10px;
+    padding-bottom: 20px;
+    gap: 15px;
+}
+
+.radio-input-group-container {
+    padding: 5px 10px;
+    padding-top: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-content: space-around;
+    height: 15%;
+}
+
+.text-input-group {
+    margin-bottom: 20px;
+}
+
+.input-text>input {
+    margin-top: 3px;
+    height: 40px;
+    width: 98%;
+    padding: 8px 12px;
+    border: 1px solid #CCCCCC;
+    font-size: 13px;
+    color: #474747;
+    border-radius: 3px;
+    font-family: 'Open Sans', Arial, sans-serif;
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+    transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+}
+
+
+.input-text>input::placeholder {
+    color: #8C9198;
+    opacity: 1;
+}
+
+.input-text {
+    padding: 4px 0;
+    position: relative;
+    width: 100%;
+    text-align: center;
+}
+
+.input-text>span {
+    font-size: 12px;
+    font-weight: 600;
+    color: #959595;
+    float: left;
+}

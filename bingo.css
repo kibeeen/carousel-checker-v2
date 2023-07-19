@@ -1,0 +1,79 @@
+.md-teaser-body.bingo{
+    height: 330px!important;
+}
+.md-teaser-text.bingo img {
+    max-height: 18.75rem;
+}
+.md-teaser-inner-text.bingo {
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    max-width: 25rem;
+    width: auto !important;
+}
+.title.bingo {
+    line-height: 1!important;
+    font-size: 42px!important;
+    margin-bottom: 0 !important;
+    font-weight: 700 !important;
+    padding: 0 !important;
+}
+.subtitle.bingo{
+    font-size: 28px !important;
+    line-height: 32px !important;
+    margin: .3125rem 0 !important;
+    font-weight: 700 !important;
+}
+.title.bingo, .subtitle.bingo{
+    font-family: 'Roboto', sans-serif;
+}
+.btn.bingo{
+    height: 3rem;
+    line-height: 2.85rem;
+    padding-top: 0;
+    padding-bottom: 0;
+    display: block;
+    min-width: inherit;
+    display: inline-block;
+    width: auto;
+    font-weight: 700 !important;
+    font-size: .875rem;
+    color: white;
+    text-align: center;
+    text-overflow: ellipsis;
+}
+.md-teaser-cta .btn.btn-primary.bingo{
+    border-radius: 0px !important;
+    border: 1px solid;
+    min-width: 100px;
+    background: #F00A47 !important;
+    border-color: #F00A47 !important;
+    transition: 200ms ease-in-out;
+}
+.btn.btn-primary.epcot-btn.mobile.btn.bingo{
+    height: 2.25rem;
+    line-height: 2rem;
+    font-size: 0.75rem;
+}
+.subtitle.bingo.mobile{
+    font-size: .8em !important;
+    margin: .3125rem 0 !important;
+    line-height: 1.2 !important;
+    font-weight: 700 !important;
+}
+.title.bingo.mobile{
+    font-size: 1rem !important;
+    font-weight: 700 !important;
+    line-height: 1.125rem !important;
+    padding-bottom: 10px !important;
+    margin-bottom: 0 !important;
+    padding: 0px !important;
+}
+.teaser-text-mobile.bingo{
+    background: none;
+}
+.header.bingo{
+    background-size: contain;
+    background-position: center bottom;
+}

@@ -1,0 +1,75 @@
+.title.wof {
+    line-height: 2.4rem;
+    margin: 1rem 0 0;
+    font-weight: 700;
+    font-size: 2.6em !important;
+}
+.carousel-png.wof {
+    display: none;
+}
+.teaser-text-mobile.wof {
+    background: none;
+}
+.md-teaser-body.wof{
+    width: 1350px;
+}
+.md-teaser-body .md-teaser-text .md-teaser-inner-text.wof {
+    position: absolute;
+    color: #fff;
+    width: 44% !important;
+    margin-left: 45.5%;
+    margin-right: 0;
+    padding: 0 1.5rem;
+    text-align: center;
+    left: unset;
+    right: unset;
+    max-width: 100%;
+    font-family: unset;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.subtitle.wof {
+    font-size: 1.75rem !important;
+    line-height: 2rem;
+    /* margin: 1rem 0 0; */
+    font-weight: 400;
+}
+
+.title.mobile.wof {
+    line-height: 1.1rem;
+    font-size: 14px !important;
+    padding-bottom: 5px;
+}
+
+.subtitle.mobile.wof {
+    font-size: .75rem !important;
+    line-height: 0.8rem;
+    margin: 0;
+}
+
+.md-teaser-image.wof {
+    background-position: left;
+    height: 100%;
+    background-size: cover;
+}
+
+.btn.wof {
+    font-size: 1.25rem !important;
+    line-height: 1.875rem !important;
+    display: inline-flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    background: #efe700 !important;
+}
+
+.btn.mobile.wof {
+    font-size: .75rem !important;
+    line-height: 1.125rem;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.teaser-mobile.wof {
+    display: none;
+}
